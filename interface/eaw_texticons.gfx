@@ -34,4 +34,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/iou_texticon.dds"
 		legacy_lazy_load = no
 	}
+				spriteType = {
+		name = "GFX_collectivization_4"
+		texturefile = "gfx/texticons/icon_collectivization_4.dds"
+		legacy_lazy_load = no
+	}
 }
