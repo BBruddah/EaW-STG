@@ -3191,7 +3191,7 @@ leader_traits = {
 	}	
 	symbol_of_revolution = {
 		random = no
-		stability_factor = 0.1
-		political_power_gain = 0.2
+		stability_factor = 0.05
+		political_power_gain = 0.1
 	}	
 }
