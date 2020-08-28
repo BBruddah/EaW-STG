@@ -373,7 +373,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
 			country_event = { id=stalliongrad.4 }
 		}
 	}
@@ -404,6 +403,17 @@ focus_tree = {
 				var = money
 				value = 1
 			}			
+			if = { 
+				limit = { has_idea = severe_famine }
+					swap_ideas = {
+						remove_idea = severe_famine add_idea = severe_famine2
+					}
+				}
+			else = {
+					swap_ideas = {
+						remove_idea = severe_famine2 add_idea = severe_famine3
+					}
+				}		
 		}
 	}
 	focus = {
@@ -419,8 +429,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_to_variable = {
+				var = collectivized_land
+				value = 15
+			}
+			add_ideas = collectivization_effort	
+			swap_ideas = {
+						remove_idea = severe_famine3 add_idea = severe_famine4
+					}			
 		}
 	}	
 	focus = {
@@ -439,6 +455,21 @@ focus_tree = {
 				var = money
 				value = 3
 			}
+			add_to_variable = {
+				var = collectivized_land
+				value = 10
+			}
+			if = { 
+				limit = { has_idea = severe_famine }
+					swap_ideas = {
+						remove_idea = severe_famine add_idea = severe_famine2
+					}
+				}
+			else = {
+					swap_ideas = {
+						remove_idea = severe_famine2 add_idea = severe_famine3
+					}
+				}			
 		}	
 	}
 	focus = {
@@ -454,8 +485,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_ideas = food_market
+			swap_ideas = {
+						remove_idea = severe_famine3 add_idea = severe_famine4
+					}			
 		}
 	}	
 	focus = {
@@ -475,6 +508,17 @@ focus_tree = {
 				var = money
 				value = 3
 			}				
+			if = { 
+				limit = { has_idea = severe_famine }
+					swap_ideas = {
+						remove_idea = severe_famine add_idea = severe_famine2
+					}
+				}
+			else = {
+					swap_ideas = {
+						remove_idea = severe_famine2 add_idea = severe_famine3
+					}
+				}			
 		}	
 	}
 	focus = {
@@ -490,8 +534,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			subtract_from_variable = {
+				var = collectivized_land
+				value = 10
+			}
+			add_ideas = deal_with_kulaks
+			swap_ideas = {
+						remove_idea = severe_famine3 add_idea = severe_famine4
+					}			
 		}
 	}	
 	focus = {
@@ -510,6 +560,17 @@ focus_tree = {
 				var = money
 				value = 3
 			}
+			if = { 
+				limit = { has_idea = severe_famine }
+					swap_ideas = {
+						remove_idea = severe_famine add_idea = severe_famine2
+					}
+				}
+			else = {
+					swap_ideas = {
+						remove_idea = severe_famine2 add_idea = severe_famine3
+					}
+				}			
 		}
 	}	
 	focus = {
