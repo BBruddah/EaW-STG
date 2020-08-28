@@ -584,10 +584,10 @@ ideas = {
 			modifier = {
 				stability_factor = -0.25
 				war_support_factor = -0.1
-				industrial_capacity_factory = -0.17
-				industrial_capacity_dockyard = -0.17
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
 				conscription_factor = -0.2
-				consumer_goods_factor = 0.12
+				consumer_goods_factor = 0.1
 				political_power_gain = -0.5
 				research_speed_factor = -0.1
 			}
@@ -606,10 +606,10 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
-				war_support_factor = -0.005
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				research_speed_factor = -0.1
+				war_support_factor = -0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				research_speed_factor = -0.15
 			}
 		}
 	}
@@ -627,13 +627,13 @@ ideas = {
 	
 			modifier = {
 				stability_factor = -0.12
-				war_support_factor = -0.05
-				industrial_capacity_factory = -0.13
-				industrial_capacity_dockyard = -0.13
-				conscription_factor = -0.1
-				consumer_goods_factor = 0.1
-				political_power_gain = -0.3
-				research_speed_factor = -0.07
+				war_support_factor = -0.08
+				industrial_capacity_factory = -0.16
+				industrial_capacity_dockyard = -0.16
+				conscription_factor = -0.16
+				consumer_goods_factor = 0.08
+				political_power_gain = -0.4
+				research_speed_factor = -0.08
 			}
 		}
 	}
@@ -650,12 +650,13 @@ ideas = {
 	
 			modifier = {
 				stability_factor = -0.10
-				industrial_capacity_factory = -0.08
-				industrial_capacity_dockyard = -0.08
-				conscription_factor = -0.07
-				consumer_goods_factor = 0.08
-				political_power_gain = -0.25
-				research_speed_factor = -0.065
+				war_support_factor = -0.06
+				industrial_capacity_factory = -0.12
+				industrial_capacity_dockyard = -0.12
+				conscription_factor = -0.12
+				consumer_goods_factor = 0.06
+				political_power_gain = -0.3
+				research_speed_factor = -0.06
 			}
 		}
 	}
@@ -671,13 +672,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.07
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				conscription_factor = -0.05
-				consumer_goods_factor = 0.06
-				political_power_gain = -0.19
-				research_speed_factor = -0.045
+				stability_factor = -0.075
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.25
+				research_speed_factor = -0.05
 			}
 		}
 	}
@@ -693,13 +695,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.04
-				industrial_capacity_factory = -0.03
-				industrial_capacity_dockyard = -0.03
-				conscription_factor = -0.025
-				consumer_goods_factor = 0.04
-				political_power_gain = -0.10
-				research_speed_factor = -0.03
+				stability_factor = -0.05
+				war_support_factor = -0.025
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				conscription_factor = -0.05
+				consumer_goods_factor = 0.025
+				political_power_gain = -0.15
+				research_speed_factor = -0.025
 			}
 		}
 	}
@@ -715,7 +718,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.02
+				stability_factor = -0.025
 				industrial_capacity_factory = -0.01
 				industrial_capacity_dockyard = -0.015
 				conscription_factor = -0.01
@@ -1385,4 +1388,23 @@ ideas = {
 			}
 		}
 	}
+	country = {
+         		deal_with_kulaks = {
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_government = communism
+				is_subject = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				communism_drift = -0.01
+			}
+		}
+	}	
 }
